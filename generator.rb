@@ -62,9 +62,9 @@ categoryrequests.each do |category, num_problems|
   master += from_category
 end
 
-practice_test = File.open("practice_test.rb", "w")
-spec = File.open("spec.rb", "w")
-solution = File.open("solution.rb", "w")
+practice_test = File.open("practice_test.js", "w")
+spec = File.open("spec.js", "w")
+solution = File.open("solution.js", "w")
 
 # require rspec and the practice_test in the spec
 spec << "require 'rspec'" << "\n"
