@@ -66,10 +66,6 @@ practice_test = File.open("practice_test.js", "w")
 spec = File.open("spec.js", "w")
 solution = File.open("solution.js", "w")
 
-# require rspec and the practice_test in the spec
-spec << "require 'rspec'" << "\n"
-spec << "require_relative 'practice_test'" << "\n"
-
 # loop through master tests and add text to the new files
 master.each do |test|
   practice_test << File.read(test[:problem_file]) << "\n"
